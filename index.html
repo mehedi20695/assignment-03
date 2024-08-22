@@ -8,7 +8,7 @@
     <!-- Google font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..900&display=swap" rel="stylesheet">
 
     <!-- Tailwind + Daisy UI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -36,6 +36,9 @@
                     'car-2': '#EFDA6E',
                     'car-3': '#A4DAC3',
                     'car-4': '#77AAEA',
+                    },
+                backgroundImage: {
+                    'bg-img': "url('./images/bg.jpg')",
                     }
                 }
             }
@@ -263,7 +266,7 @@
          <section class="container mx-auto w-[95%] lg:w-[90%] mt-10 lg:mt-20">
             
             <!-- portfolio tittle content -->
-             <div class="text-center space-y-5">
+             <div class="text-center space-y-5 py-5">
                 <div class="flex justify-center">
                     <button class="btn bg-secondary-color font-bold rounded-full">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -283,7 +286,7 @@
 
                 <!-- first row -->
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
-                    <div class="hero border border-slate-200 rounded-3xl col-span-2">
+                    <div class="hero border border-slate-200 rounded-3xl lg:col-span-2">
                         <div class="hero-content flex-col lg:flex-row">
                           <img
                             src="./images/img1.png"
@@ -305,15 +308,22 @@
                     <div class="border border-slate-200 rounded-3xl">
                         <img src="./images/img2.png" class="p-5 w-full rounded-2xl" alt="">
                     </div>
+
+                    <!-- only mobile device shown img -->
+                    <div class="border border-slate-200 rounded-3xl lg:hidden">
+                        <img src="./images/img5.png" class="p-5 w-full rounded-2xl" alt="">
+                    </div>
                 </div>
 
                 <!-- second row -->
                 <div class="grid grid-cols-1 lg:grid-cols-4 gap-3">
-                    <div class="border border-slate-200 rounded-3xl">
+
+                    <!-- img shown on large device but hide on mobile device -->
+                    <div class="border border-slate-200 rounded-3xl hidden lg:block">
                         <img src="./images/img3.png" class="p-5 w-full rounded-2xl" alt="">
                     </div>
 
-                    <div class="hero border border-slate-200 rounded-3xl col-span-2">
+                    <div class="hero border border-slate-200 rounded-3xl lg:col-span-2">
                         <div class="hero-content flex-col lg:flex-row">
                           <img
                             src="./images/img4.png"
@@ -333,6 +343,11 @@
                         </div>
                     </div>
 
+                    <!-- only mobile device shown img -->
+                    <div class="border border-slate-200 rounded-3xl lg:hidden">
+                        <img src="./images/img3.png" class="p-5 w-full rounded-2xl" alt="">
+                    </div>
+
                     <div class="border border-slate-200 rounded-3xl">
                         <img src="./images/img5.png" class="p-5 w-full rounded-2xl" alt="">
                     </div>
@@ -340,6 +355,53 @@
               </div>
          </section>
         <!-- Latest portfolio challenege section end -->
+
+        <!-- discuss section start -->
+        <section class="bg-bg-img bg-cover bg-center">
+            <section class="container mx-auto w-[95%] lg:w-[80%] mt-10 lg:mt-20 py-5 lg:py-20">
+
+                <!-- discuss tittle content -->
+                <div class="text-center space-y-5 py-5">
+                    <div class="flex justify-center">
+                        <button class="btn bg-secondary-color font-bold rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            </svg>                          
+                            <span>Let’s Connect</span>
+                        </button>
+                    </div>
+                    <h1 class="font-bold text-2xl lg:text-4xl">Let’s Discuss Next Project</h1>
+                    <p>
+                        Please put your information and send us mail. We will contact with you and discuss<br class="hidden lg:block">about your project. We will give you the best plan for your project.
+                    </p>
+                 </div> 
+
+                <!-- discuss input content -->
+                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                    <!-- first row -->
+                    <input type="text" placeholder="First Name*" class="input w-full rounded-full" />
+                    <input type="text" placeholder="Last Name*" class="input w-full rounded-full" />
+                 </div>
+                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-5">
+                    <!-- second row -->
+                    <input type="text" placeholder="Phone Number*" class="input w-full rounded-full" />
+                    <input type="text" placeholder="Email Address*" class="input w-full rounded-full" />
+                 </div>
+                    <!-- textarea row -->
+                 <div>
+                    <textarea class="textarea w-full h-52 p-4 mt-5 rounded-3xl" placeholder="Write your message here"></textarea>
+                 </div>
+
+                 <button class="btn w-full bg-primary-color font-extrabold text-lg rounded-full my-3">
+                    <span>Send Mail</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white bg-[#1C1C1C] rounded-full p-1">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                      
+                </button>
+            </section>
+        </section>
+        <!-- discuss section end -->
     </main>
 
     <!-- Footer section -->
