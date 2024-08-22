@@ -27,7 +27,7 @@
                     clifford: '#da373d',
                     'primary-color': '#ABEF5F',
                     'secondary-color': '#ABEF5F80',
-                    
+                    'nav-ancor': '#737373',
                     }
                 }
             }
@@ -41,7 +41,7 @@
 
 <body class="font-manrope">
     <!-- Header section -->
-    <header class="container mx-auto">
+    <header class="container mx-auto lg:w-[90%]">
         <!-- navbar section -->
          <nav class="">
             <div class="navbar">
@@ -54,10 +54,10 @@
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
                     <li><a class="font-extrabold">Home</a></li>
-                    <li><a>Services</a></li>
-                    <li><a>Portfolio</a></li>
-                    <li><a>Blogs</a></li>
-                    <li><a>Contact Us</a></li>
+                    <li><a class="text-nav-ancor">Services</a></li>
+                    <li><a class="text-nav-ancor">Portfolio</a></li>
+                    <li><a class="text-nav-ancor">Blogs</a></li>
+                    <li><a class="text-nav-ancor">Contact Us</a></li>
                   </ul>
                 </div>
                 <div class="navbar-end">
@@ -74,7 +74,7 @@
                         </svg>
                           
                     </button>
-                    <button class="flex btn bg-primary-color font-extrabold text-base rounded-full">
+                    <button class="btn bg-primary-color font-extrabold text-base rounded-full">
                         <span>Book Consult</span>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white bg-[#1C1C1C] rounded-full p-1">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
@@ -93,15 +93,40 @@
                     <ul tabindex="0"
                       class="dropdown-content text-xs">
                         <li><a class="font-extrabold">Home</a></li>
-                        <li><a>Services</a></li>
-                        <li><a>Portfolio</a></li>
-                        <li><a>Blogs</a></li>
-                        <li><a>Contact Us</a></li>
+                        <li><a class="text-nav-ancor">Services</a></li>
+                        <li><a class="text-nav-ancor">Portfolio</a></li>
+                        <li><a class="text-nav-ancor">Blogs</a></li>
+                        <li><a class="text-nav-ancor">Contact Us</a></li>
                     </ul>
                 </div>
               </div>
          </nav>
         <!-- navbar section -->
+
+        <!-- banner section -->
+         <section class="my-3">
+            <!-- banner image section -->
+            <div class="flex justify-center">
+                <img src="./images/banner.png" alt="">
+            </div>
+            <!-- banner text section -->
+            <div class="text-center space-y-5">
+                <h1 class="font-extrabold lg:text-6xl text-3xl">
+                    A barn house of this design has a <br class="hidden lg:block"> striking appearance
+                </h1>
+                <p class="font-medium">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br class="hidden lg:block"> accents, and large windows that flood the space with natural light.
+                </p>
+                <button class="btn w-full lg:w-auto bg-secondary-color font-extrabold text-base rounded-full">
+                    <span>View Details</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 bg-[#ABEF5F] rounded-full p-1">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                      
+                </button>
+            </div>
+         </section>
+        <!-- banner section -->
     </header>
 
     <!-- Main section -->
