@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
 
+    <!-- favicon link -->
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+
     <!-- Google font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -141,21 +144,21 @@
     <!-- Main section -->
     <main>
         <!-- about us and work process section start-->
-         <section class="bg-primary-bg-color mt-10 lg:mt-20">
+         <section class="bg-primary-bg-color mt-10 lg:mt-20 container mx-auto">
 
             <!-- about us section -->
             <section class="container mx-auto w-[95%] lg:w-[90%] lg:flex lg:justify-center lg:gap-5">
                 <!-- about us text content -->
                  <div class="py-5 lg:py-20 space-y-5 lg:space-y-9 text-center lg:text-left lg:relative">
                     <div class="flex justify-center lg:justify-start">
-                        <button class="btn bg-white font-bold rounded-full">
+                        <button class="btn bg-white font-extrabold rounded-full">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                             </svg>                          
                             <span>About Us</span>
                         </button>
                     </div>
-                    <h1 class="font-bold text-2xl lg:text-4xl">
+                    <h1 class="font-extrabold text-2xl lg:text-4xl">
                         We design thoughtful, <br class="hidden lg:block"> liveable spaces
                     </h1>
                     <p>
@@ -224,14 +227,14 @@
                 <!-- title content -->
                 <div class="text-center space-y-5">
                     <div class="flex justify-center">
-                        <button class="btn bg-white font-bold rounded-full">
+                        <button class="btn bg-white font-extrabold rounded-full">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                             </svg>                          
                             <span>How we works</span>
                         </button>
                     </div>
-                    <h1 class="font-bold text-2xl lg:text-4xl">Our Works Process</h1>
+                    <h1 class="font-extrabold text-2xl lg:text-4xl">Our Works Process</h1>
                     <p>
                         Our work process is rooted in collaboration, where we blend innovative design with practical solutions <br class="hidden lg:block"> to create spaces that inspire and endure. From initial concept to final execution, we ensure every <br class="hidden lg:block"> detail aligns with our client's vision and the highest standards of quality.
                     </p>
@@ -270,14 +273,14 @@
             <!-- portfolio tittle content -->
              <div class="text-center space-y-5 py-5">
                 <div class="flex justify-center">
-                    <button class="btn bg-secondary-color font-bold rounded-full">
+                    <button class="btn bg-secondary-color font-extrabold rounded-full">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                         </svg>                          
                         <span>Explore our Latest works</span>
                     </button>
                 </div>
-                <h1 class="font-bold text-2xl lg:text-4xl">Our Latest Portfolio</h1>
+                <h1 class="font-extrabold text-2xl lg:text-4xl">Our Latest Portfolio</h1>
                 <p>
                     Our latest portfolio showcases a diverse range of innovative projects, highlighting our commitment <br class="hidden lg:block"> to exceptional design and functionality across various sectors.
                 </p>
@@ -358,21 +361,104 @@
          </section>
         <!-- Latest portfolio challenege section end -->
 
+        <!-- unique challenge section start -->
+         <section class="container mx-auto w-[95%] lg:w-[90%] mt-10 lg:mt-20">
+            <!-- unique section tittle content -->
+            <div class="text-center space-y-5 py-5">
+                <div class="flex justify-center">
+                    <button class="btn bg-secondary-color font-extrabold rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>                          
+                        <span>See our popular works</span>
+                    </button>
+                </div>
+                <h1 class="font-extrabold text-2xl lg:text-4xl">Our Popular Projects</h1>
+                <p>
+                    Our popular projects feature a range of cutting-edge commercial and residential designs <br class="hidden lg:block">that exemplify our commitment to innovation and excellence.
+                </p>
+            </div>
+            <!-- popular projects Carousel -->
+            <div class="carousel w-full rounded-xl">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img
+                    src="./images/popular-1.jpg"
+                    class="w-full" />
+                    <div class="absolute left-1/2 bottom-1/2 bg-gray-300 rounded-3xl p-1 lg:p-4 opacity-75">
+                        <h1 class="text-xl lg:text-3xl font-extrabold">300+ Likes</h1>
+                    </div>
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide5" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img
+                    src="./images/popular-2.jpg"
+                    class="w-full" />
+                    <div class="absolute left-1/2 bottom-1/2 bg-gray-300 rounded-3xl p-1 lg:p-4 opacity-75">
+                        <h1 class="text-xl lg:text-3xl font-extrabold">200+ Likes</h1>
+                    </div>
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img
+                    src="./images/popular-3.jpg"
+                    class="w-full" />
+                    <div class="absolute left-1/2 bottom-1/2 bg-gray-300 rounded-3xl p-1 lg:p-4 opacity-75">
+                        <h1 class="text-xl lg:text-3xl font-extrabold">100+ Likes</h1>
+                    </div>
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img
+                    src="./images/popular-4.jpg"
+                    class="w-full" />
+                    <div class="absolute left-1/2 bottom-1/2 bg-gray-300 rounded-3xl p-1 lg:p-4 opacity-75">
+                        <h1 class="text-xl lg:text-3xl font-extrabold">100+ Likes</h1>
+                    </div>
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide5" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <div id="slide5" class="carousel-item relative w-full">
+                  <img
+                    src="./images/popular-5.jpg"
+                    class="w-full" />
+                    <div class="absolute left-1/2 bottom-1/2 bg-gray-300 rounded-3xl p-1 lg:p-4 opacity-75">
+                        <h1 class="text-xl lg:text-3xl font-extrabold">50+ Likes</h1>
+                    </div>
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+            </div>
+         </section>
+        <!-- unique challenge section end -->
+
         <!-- discuss section start -->
-        <section class="bg-bg-img bg-cover bg-center">
-            <section class="container mx-auto w-[95%] lg:w-[70%] mt-10 lg:mt-20 py-5 lg:py-20">
+        <section class="bg-bg-img bg-cover bg-center container mx-auto">
+            <section class="mx-auto w-[95%] lg:w-[70%] mt-10 lg:mt-20 py-5 lg:py-20">
 
                 <!-- discuss tittle content -->
                 <div class="text-center space-y-5 py-5">
                     <div class="flex justify-center">
-                        <button class="btn bg-secondary-color font-bold rounded-full">
+                        <button class="btn bg-secondary-color font-extrabold rounded-full">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                             </svg>                          
                             <span>Let’s Connect</span>
                         </button>
                     </div>
-                    <h1 class="font-bold text-2xl lg:text-4xl">Let’s Discuss Next Project</h1>
+                    <h1 class="font-extrabold text-2xl lg:text-4xl">Let’s Discuss Next Project</h1>
                     <p>
                         Please put your information and send us mail. We will contact with you and discuss<br class="hidden lg:block">about your project. We will give you the best plan for your project.
                     </p>
@@ -407,8 +493,8 @@
     </main>
 
     <!-- Footer section -->
-    <footer class="bg-footer-bg py-5 lg:py-20">
-        <section class="container mx-auto w-[95%] lg:w-[60%] space-y-10">
+    <footer class="bg-footer-bg py-5 lg:py-20 container mx-auto">
+        <section class="mx-auto w-[95%] lg:w-[60%] space-y-10">
             <div class="flex justify-center items-center gap-2 font-extrabold lg:text-3xl text-xl">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="lg:size-8 size-6 bg-[#ABEF5F] rounded-full p-1">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" /> 
